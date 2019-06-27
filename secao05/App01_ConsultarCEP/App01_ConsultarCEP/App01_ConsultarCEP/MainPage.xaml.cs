@@ -53,11 +53,11 @@ namespace App01_ConsultarCEP
         {
             bool valido = true;
 
-            /*if(cep.Length != 8)
+            if(cep.Length != 8)
             {
                 DisplayAlert("Erro", "CEP inválido! O CEP deve conter 8 caracteres.", "OK");
                 valido = false;
-            }*/
+            }
 
             int NovoCEP = 0;
             if(!int.TryParse(cep, out NovoCEP))
