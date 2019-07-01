@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace App01_LayoutXF.Relative
+namespace App01_LayoutXF.Layouts.Stack
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class RelativePage : ContentPage
+    public partial class StackPage : ContentPage
     {
-        public RelativePage()
+        public StackPage()
         {
             InitializeComponent();
         }

@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace App01_LayoutXF.Stack
+namespace App01_LayoutXF.Layouts.Grid
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class StackPage : ContentPage
+    public partial class GridPage : ContentPage
     {
-        public StackPage()
+        public GridPage()
         {
             InitializeComponent();
         }

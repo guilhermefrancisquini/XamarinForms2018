@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace App01_LayoutXF.Scroll
+namespace App01_LayoutXF.Layouts.Relative
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class RelativePage : ContentPage

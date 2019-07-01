@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace App01_LayoutXF.Grid
+namespace App01_LayoutXF.Layouts.Absolute
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class GridPage : ContentPage
+    public partial class AbsolutePage : ContentPage
     {
-        public GridPage()
+        public AbsolutePage()
         {
             InitializeComponent();
         }

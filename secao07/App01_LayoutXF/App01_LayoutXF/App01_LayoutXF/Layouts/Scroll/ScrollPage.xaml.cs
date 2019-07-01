@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace App01_LayoutXF.Absolute
+namespace App01_LayoutXF.Layouts.Scroll
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class AbsolutePage : ContentPage
+    public partial class ScrollPage : ContentPage
     {
-        public AbsolutePage()
+        public ScrollPage()
         {
             InitializeComponent();
         }

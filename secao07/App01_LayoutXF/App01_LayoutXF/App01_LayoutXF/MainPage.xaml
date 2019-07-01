@@ -8,10 +8,10 @@
 
     <StackLayout>
         <Button Text="Stack" Clicked="GoPageStack"/>
-        <Button Text="Stack" Clicked="GoPageStack"/>
-        <Button Text="Stack" Clicked="GoPageStack"/>
-        <Button Text="Stack" Clicked="GoPageStack"/>
-        <Button Text="Stack" Clicked="GoPageStack"/>
+        <Button Text="Grid" Clicked="GoPageGrid"/>
+        <Button Text="Absolute" Clicked="GoPageAbsolute"/>
+        <Button Text="Relative" Clicked="GoPageRelative"/>
+        <Button Text="Scroll" Clicked="GoPageScroll"/>
     </StackLayout>
 
 </ContentPage>
