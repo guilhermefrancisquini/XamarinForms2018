@@ -1,15 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:page="clr-namespace:App02_Xamarin.Pages"
              mc:Ignorable="d"
              x:Class="App02_Xamarin.Master.Menu">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+    <MasterDetailPage.Master>
+        <!-- Menu -->
+        <ContentPage Title="Menu" BackgroundColor="#0D1F2D">
+            <StackLayout>
+                <StackLayout BackgroundColor="#FFC926" Padding="30">
+                    <Image Source="Logo.png" HorizontalOptions="Center" VerticalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Spacing="50">
+                    <Button Text="Miguel de Icaza" FontSize="28" TextColor="White" BackgroundColor="Transparent" Clicked="GoPageProfile1"/>
+                    <Button Text="Joseph Hill" FontSize="28" TextColor="White" BackgroundColor="Transparent" />
+                    <Button Text="Nat Friedman" FontSize="28" TextColor="White" BackgroundColor="Transparent" />
+                    <Button Text="Sobre a Xamarin" FontSize="28" TextColor="White" BackgroundColor="Transparent" Clicked="GoPageXamarin"/>
+                </StackLayout>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <!-- Páginas -->
+        <NavigationPage>
+            <x:Arguments>
+                <page:Perfil1 />                
+            </x:Arguments>
+        </NavigationPage>
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
